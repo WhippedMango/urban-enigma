@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Karl Davies - About Me</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat%7CQuicksand" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/animations.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ==" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js" integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==" crossorigin=""></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
+    <noscript>
+            <style>
+        .wallpaper {
+                animation-name: zoomOut;
+            }
+        .picture {
+                animation-name: dropIn;
+            } </style>
+        </noscript>
+</head>
+
+<body>
+    <div id="wallpaper" class="wallpaper" data-image="images/milkyway.jpg"></div>
+    <div class="content">
+        <aside class="side">
+            <figure id="picture" class="picture">
+                <div class="picture-shadow"></div>
+                <img id="pictureImage" class="picture-image" src="images/karl.jpg" srcset="images/karl.jpg 1x, images/karl_2x.jpg 2x, images/karl_3x.jpg 3x" alt="Karl Davies playing Guitar" width="320" height="320">
+            </figure>
+        </aside>
+        <main class="about">
+            <h1 class="name">
+                Karl Davies
+            </h1>
+            <p class="job">
+                Software Engineer
+            </p>
+            <hr class="hr">
+            <div class="description">
+                <ul>
+                    <li class="link"><a href="index.html">Home</a></li>
+                    <li class="link1"><a href="gameLife.html">Game of Life</a></li>
+                    <li class="link"><a href="gameAbout.html">What is the Game of Life?</a></li>
+                    <li class="link1"><a href="patterns.html">Patterns</a></li>
+                    <li class="link"><a href="projects.html">Projects</a></li>
+                    <li class="link1"><a href="about.html">About Me</a></li>
+                </ul>
+            </div>
+            <hr class="hr">
+            <p class="job">
+                Who is Karl Davies?
+            </p>
+            <div>
+                <p class="txtcont">
+                    Born in Southport in 1996, I originally studied as a musician after teaching myself guitar as a teenager. This drive for knowledge has always led me to teach myself skills that I may not have been able to learn easily elsewhere. At undergraduate level
+                    at University, I found creative coding very interesting and spent more of my time researching data structures, design principles and coding in general, than I did anything music related. It was due to this that I decided to create
+                    a musical chessboard for my dissertation in the Java programming language, which not only introduced me to OOP and its principles, but also to the immense levels of satisfaction that I could find from solving an incredibly difficult
+                    challenge. Recently, I have been hired as a Graduate Developer for TVS SCS and I hope to thrive there whilst moving to the top of my field.
+                </p>
+            </div>
+            <hr class="hr">
+            <h2 class="job">External Links</h2>
+            <div class="social">
+                <ul class="social">
+                    <li>
+                        <a href="https://www.twitter.com/WhippedMango">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/WhippedMango">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/KarlDaviesCode">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://music.apple.com/gb/album/wasted-single/1543340242">
+                            <i class="fab fa-apple"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://open.spotify.com/track/2HYquF1IGLet7w2iBBxh7G?si=e8614cd75c2c4f16">
+                            <i class="fab fa-spotify"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="job">
+                <a class="button" href="mailto:karldaviesmail@gmail.com">
+                    Email Me
+                </a>
+            </div>
+            <hr class="hr">
+            <div class="job">
+                <p>
+                    time: <span id="currentTime"></span>
+                </p>
+                <p>
+                    timezone: <span id="timeZone"></span>
+                </p>
+            </div>
+            <hr class="hr">
+            <aside class="job">
+                <div id="map"></div>
+            </aside>
+        </main>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/timeMap.js"></script>
+</body>
+
+</html>
